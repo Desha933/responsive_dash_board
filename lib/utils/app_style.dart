@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-abstract class AppStyle {
+abstract class AppStyleFont {
   static const TextStyle styleRegular16 = TextStyle(
     color: Color(0xff064061),
     fontSize: 16,
@@ -16,8 +16,6 @@ abstract class AppStyle {
   static const TextStyle styleRegular14 = TextStyle(
     color: Color(0xffAAAAAA),
     fontSize: 14,
-    fontFamily: 'Montserrat',
-    fontWeight: FontWeight.w400,
   );
 
   static const TextStyle styleMedium20 = TextStyle(
