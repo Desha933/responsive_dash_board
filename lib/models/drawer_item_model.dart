@@ -1,6 +1,6 @@
 class DrawerItemModel {
   final String title;
   final String image;
-
-  DrawerItemModel({required this.title, required this.image});
+  final String? subtitle;
+  DrawerItemModel({required this.title, required this.image, this.subtitle});
 }
