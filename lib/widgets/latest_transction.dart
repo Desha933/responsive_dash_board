@@ -1,27 +1,24 @@
 import 'package:flutter/material.dart';
 
 import '../utils/app_styles.dart';
-import 'custom_text_field.dart';
+import 'latest_transction_list_view.dart';
 
-class TitleTextField extends StatelessWidget {
-  const TitleTextField({super.key, required this.title, required this.hint});
+class LatestTransction extends StatelessWidget {
+  const LatestTransction({super.key});
 
-  final String title, hint;
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Customer name',
+          'Latest Transaction',
           style: AppStyles.styleMedium16(context),
         ),
         const SizedBox(
-          height: 12,
+          height: 16,
         ),
-        CustomTextField(
-          hint: hint,
-        ),
+        const LatestTransctionListView()
       ],
     );
   }
