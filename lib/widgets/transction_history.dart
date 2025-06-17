@@ -8,27 +8,29 @@ class TrasnctionHistory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        TansctionHistoryHeader(),
-        SizedBox(
-          height: 20,
-        ),
-        Text(
-          '13 April 2022',
-          style: TextStyle(
-            color: Color(0xFFAAAAAA),
-            fontSize: 16,
-            fontFamily: 'Montserrat',
-            fontWeight: FontWeight.w500,
-            height: 0,
+        const TansctionHistoryHeader(),
+        const FittedBox(
+          child: Text(
+            '13 April 2022',
+            style: TextStyle(
+              color: Color(0xFFAAAAAA),
+              fontSize: 16,
+              fontFamily: 'Montserrat',
+              fontWeight: FontWeight.w500,
+              height: 0,
+            ),
           ),
         ),
-        SizedBox(
-          height: 16,
+        const SizedBox(
+          height: 10,
         ),
-        TransctionHistoryListView(),
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.15,
+          child: const TransctionHistoryListView(),
+        ),
       ],
     );
   }
